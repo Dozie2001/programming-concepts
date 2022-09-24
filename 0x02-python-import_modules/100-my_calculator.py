@@ -12,16 +12,18 @@ if __name__ == "__main__":
 
     if argv[2] == '+':
         print("{} + {} = {}".format(a, b, add(a, b)))
-    
+        exit(0)
+
     elif argv[2] == '-':
         print("{} - {} = {}".format(a, b, sub(a, b)))
-    
+        exit(0)
     elif argv[2] == '/':
         print("{} / {} = {}".format(a, b, div(a, b)))
-    
+        exit(0)
+
     elif argv[2] == '*':
         print("{} * {} = {}".format(a, b, mul(a, b)))
-    
+        exit(0)
     else:
+        print("Unkown operator. Available operators: +, -, * and /")
         exit(1)
-
