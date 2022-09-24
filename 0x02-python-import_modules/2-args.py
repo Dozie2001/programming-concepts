@@ -3,10 +3,10 @@ if __name__ == "__main__":
     from sys import argv
     len_arg = len(argv)
     if len_arg == 1:
-        print(f"{len_arg - 1} argument.")
+        print("{} argument.".format(len_arg - 1))
     elif len_arg == 2:
-        print(f"{len_arg - 1} argument:")
+        print("{} argument:".format(len_arg - 1))
     else:
-        print(f"{len_arg - 1} arguments:")
+        print("{} arguments:".format(len_arg - 1))
     for i in range(1, len_arg):
-        print(f"{i}: {argv[i]}")
+        print("{}: {}".format(i, argv[i]))
