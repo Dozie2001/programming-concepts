@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Square Value"""
+
+
 class Square:
     """
     Defines a Square and its basic properties
