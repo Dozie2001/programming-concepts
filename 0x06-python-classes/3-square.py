@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Square Value"""
 
+
 class Square:
     """
     Defines a Square and its basic properties
@@ -14,7 +15,7 @@ class Square:
         If they are not, the size defaults to 0
         :param size: int size of square ( > 0)
         """
-        
+
         if (type(size) is not int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -22,4 +23,10 @@ class Square:
         self.__size = size
 
     def area(self):
+
+        """
+        Calculates and returns the area of the square
+        :return: the area of the square
+        """
+
         return self.__size ** 2
