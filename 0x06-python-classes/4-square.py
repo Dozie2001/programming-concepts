@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 """Square Value"""
-
-
-from sys import settrace
-
-
 class Square:
     """
     Defines a Square and its basic properties
