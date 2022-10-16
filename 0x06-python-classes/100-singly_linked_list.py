@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Define classes for a singly-linked list."""
+
 class Node:
     def __init__(self, data, next_node=None):
         self.__data = data
@@ -6,24 +8,27 @@ class Node:
 
     @property
     def data(self):
+        """Get the data of the Node."""
         return self.__data
 
     @data.setter
     def data(self, value):
+
         if type(value) is not int:
             raise TypeError("data must be an integer")
         self.__data = value
 
     @property
     def next_node(self):
+        """Get the next_node of the Node."""
         return self.__next_node
+
 
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
             self.__next_node = value
-
 
 class SinglyLinkedList:
     """ Represent a singly-linked list."""
