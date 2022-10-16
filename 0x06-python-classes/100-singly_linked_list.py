@@ -1,10 +1,18 @@
 #!/usr/bin/python3
 """Define classes for a singly-linked list."""
 
+
 class Node:
+    """Represent a node in a singly-linked list."""
+
     def __init__(self, data, next_node=None):
+        """Initialize a new Node.
+
         self.__data = data
         self.__next_node = node
+        """
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
@@ -23,18 +31,19 @@ class Node:
         """Get the next_node of the Node."""
         return self.__next_node
 
-
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
             self.__next_node = value
 
+
 class SinglyLinkedList:
     """ Represent a singly-linked list."""
 
     def __init__(self):
         """Inititalise SinglyLinkedList"""
+
         self.__head = None
 
     def sorted_insert(self, value):
