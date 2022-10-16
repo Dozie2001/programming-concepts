@@ -66,6 +66,8 @@ class Square:
         elif type(value[0] is not int) or type(value[0]) is not int:
             raise TypeError("position must be a tuple of 2 positive integer")
 
+        self.__position = value
+
     def area(self):
 
         """
