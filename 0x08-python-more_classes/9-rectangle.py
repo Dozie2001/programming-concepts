@@ -79,7 +79,6 @@ class Rectangle:
         Args:
             size (int): The width and height of the new Rectangle.
         """
-
         return cls(size, size)
     def __str__(self):
         """Return the printable representation of the Rectangle.
@@ -96,7 +95,7 @@ class Rectangle:
                 rect.append('\n')
         return ("".join(rect))
     
-    def 
+
 
     def __repr__(self):
         """A formal representation of the class"""
