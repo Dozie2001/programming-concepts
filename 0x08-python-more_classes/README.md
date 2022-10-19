@@ -666,5 +666,3 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x08-python-more_classes
 File: 9-rectangle.py
-    
-Copyright © 2022 ALX, All rights reserved.
