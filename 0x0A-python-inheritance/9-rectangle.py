@@ -47,5 +47,7 @@ class Rectangle(BaseGeometry):
         return (self.__width * self.__height)
 
     def __str__(self):
-        return "[{}] {}/{}".format(type(self).__name__ /
-                                   self.__width, self.__height)
+        """Return The print representation and str representation of the Class"""
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += str(self.__width) + "/" + str(self.__height)
+        return string
