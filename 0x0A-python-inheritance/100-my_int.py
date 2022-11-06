@@ -14,6 +14,6 @@ class MyInt():
     def __ne__(self, other):
         """Returns == instead of !="""
         return self.value == other
-    
+
     def __str__(self):
         return str(self.value)
