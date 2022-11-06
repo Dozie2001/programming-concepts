@@ -27,8 +27,9 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
 
+
 class Rectangle(BaseGeometry):
-    """A class that shows how a rectangle works and inherits 
+    """A class that shows how a rectangle works and inherits
     basic geometry properties from 'Base Geometry' """
 
     def __init__(self, width, height):
