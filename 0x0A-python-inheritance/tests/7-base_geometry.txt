@@ -62,8 +62,8 @@ Traceback (most recent call last):
 ...
 TypeError: complex must be an integer
 >>> b.integer_validator("string", "hello")
-    Traceback (most recent call last):
-...
+Traceback (most recent call last):
+    ...
 TypeError: string must be an integer
 >>> b.integer_validator("tuple", (1, 2))
 Traceback (most recent call last):
