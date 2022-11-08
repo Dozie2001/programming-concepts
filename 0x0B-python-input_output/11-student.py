@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """A student defining class"""
-import json
+
 
 
 class Student:
