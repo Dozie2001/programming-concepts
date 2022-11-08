@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A student defining class"""
 
+
 class Student:
     """A class that shows what it means to be a student"""
 
