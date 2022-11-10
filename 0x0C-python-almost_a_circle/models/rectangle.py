@@ -78,4 +78,5 @@ class Rectangle(Base):
         self.__y = val
     
     def area(self):
+        """Find the are of the Rectangle"""
         return self.__height * self.__width
