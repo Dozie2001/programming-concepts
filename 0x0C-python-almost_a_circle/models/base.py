@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A class that will be the base of all our other classes"""
 
+
 class Base:
     """A class that will manage all our other classes"""
     __nb_objects = 0
