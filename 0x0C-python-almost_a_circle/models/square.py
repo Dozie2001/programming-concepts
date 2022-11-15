@@ -20,7 +20,7 @@ class Square(Rectangle):
         """ Setter size """
         self.__width = value
         self.__height = value
-    
+
     def __str__(self):
         str_rectangle = "[Square] "
         str_id = "({}) ".format(self.id)
