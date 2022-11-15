@@ -101,7 +101,7 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} - {}/{}".\
             format(self.__class__.__name__, self.id, self.__x, self.__y,
                    self.__height, self.__width)
-    
+
     def update(self, *args):
         """Update method"""
         if args is not None and len(args) is not 0:
