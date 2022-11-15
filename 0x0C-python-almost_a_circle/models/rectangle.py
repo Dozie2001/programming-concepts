@@ -114,4 +114,10 @@ class Rectangle(Base):
     
     def to_dictionary(self):
         """Returns the dict representation of the string"""
-        return self.__dict__
+        list_atr = ['id', 'width', 'height', 'x', 'y']
+        dict_res = {}
+
+        for key in list_atr:
+            dict_res[key] = getattr(self, key)
+        
+        return dict_res
