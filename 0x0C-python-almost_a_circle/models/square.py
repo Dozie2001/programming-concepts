@@ -28,3 +28,13 @@ class Square(Rectangle):
         str_size = "{}".format(self.size)
 
         return str_rectangle + str_id + str_xy + str_size
+
+    def update(self, *args, **kwargs):
+        """Update method"""
+        if args is not None and len(args) != 0:
+            list_args = ['id', 'size', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, list_args[i], args[i])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
