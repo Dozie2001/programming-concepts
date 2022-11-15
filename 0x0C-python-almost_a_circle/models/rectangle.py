@@ -101,3 +101,10 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} - {}/{}".\
             format(self.__class__.__name__, self.id, self.__x, self.__y,
                    self.__height, self.__width)
+    
+    def update(self, *args):
+        """Update method"""
+        if args is not None and len(args) is not 0:
+            list_args = ['id', 'width', 'height', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, list_args[i], args[i])
