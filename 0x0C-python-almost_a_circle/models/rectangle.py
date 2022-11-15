@@ -1,16 +1,22 @@
 #!/usr/bin/python3
-"""A Rectangle class that inherits from Base"""
+"""Module for Rectangle class"""
 from models.base import Base
 
 
 class Rectangle(Base):
-    """A Rectangle Class
-    Initialising the attributes
-        args:
-         width (int) : The width of the Rectangle
-         height (int): The height of the Rectangle
-         x(int): x coordinate
-         y(int): y coordinate
+    """
+    Class Rectangle used to define a rectangle
+    ...
+    Attributes
+    ----------
+    width : int
+        the width of the rectangle
+    height : int
+        height of the rectangle
+    x : int
+        x coordinate
+    y : int
+        y coordinate
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -78,20 +84,20 @@ class Rectangle(Base):
         self.__y = val
 
     def area(self):
-        """Find the are of the Rectangle"""
-        return self.__height * self.__width
+        """Return the area of the Rectangle"""
+        return self.width * self.height
 
     def display(self):
-        """Prints a rectangle using #"""
-        rectangle = self.y * '\n'
+        """ displays a rectangle """
+        rectangle = self.y * "\n"
         for i in range(self.height):
-            rectangle += (self.x * " ")
-            rectangle += (self.width * "#") + "\n"
+            rectangle += (" " * self.x)
+            rectangle += ("#" * self.width) + "\n"
 
-        print(rectangle, end="")
+        print(rectangle, end='')
 
     def __str__(self):
-        """Str magic method"""
+        """ str special method """
         return "[{}] ({}) {}/{} - {}/{}".\
             format(self.__class__.__name__, self.id, self.__x, self.__y,
                    self.__height, self.__width)
