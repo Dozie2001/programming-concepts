@@ -39,3 +39,10 @@ class Base:
 
         with open(filename, 'w') as f:
             f.write(lists)
+
+    @staticmethod
+    def from_json_string(json_string):
+        empty_list = []
+        if not json_string:
+            return empty_list
+        json.loads(json_string)
