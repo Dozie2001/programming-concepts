@@ -42,6 +42,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """JSON string to dictionary"""
         empty_list = []
         if not json_string:
             return empty_list
