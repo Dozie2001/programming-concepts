@@ -2,6 +2,6 @@
 -- Each record should display: cities.id - cities.name - states.name
 SELECT c.id, c.name, s.name
 FROM cities AS c
-INNER JOIN states as s
+INNER JOIN states AS s
     ON c.state_id = s.id
 OrDER BY c.id ASC;
