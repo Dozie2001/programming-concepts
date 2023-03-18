@@ -4,8 +4,8 @@
 -- Results must be sorted in descending order by the number of shows linked
 SELECT g.`name` AS `genre`,
     COUNT(*) AS `number_of_shows`
-  FROM `tv_genre` AS g 
+  FROM `tv_genres` AS g 
     INNER JOIN `tv_show_genres` AS t
     ON g.`id` = t.`genre_id`
 GROUP BY `genre`
-ORDER BY `number_of_shows`;
+ORDER BY `number_of_shows` DESC;
