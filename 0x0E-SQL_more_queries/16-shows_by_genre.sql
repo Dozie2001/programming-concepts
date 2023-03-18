@@ -4,7 +4,7 @@
 -- Results must be sorted in ascending order by the show title and genre name
 SELECT s.`title`, g.`name`
     FROM `tv_shows` AS s
-       LEFT JOIN `tv_show_genres` as t
+       LEFT JOIN `tv_show_genres` AS t
           ON s.`id` = t.`show_id`
         LEFT JOIN `tv_genres` AS g
            ON g.`id` = t.`genre_id`
