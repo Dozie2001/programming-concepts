@@ -62,3 +62,26 @@ guillaume@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
 guillaume@ubuntu:~/0x0F$ 
 ```
 
+### **[2. Filter states by user input](2-my_filter_states.py)**
+A  script that takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
+  * Your script should take 4 arguments: mysql username, mysql password, database name and state name searched (no argument validation needed)
+  * Your script should connect to a MySQL server running on localhost at port `3306`
+  * You must be sorted in ascending order by states.id
+``` bash
+guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql
+-- Create states table in hbtn_0e_0_usa with some data
+CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
+USE hbtn_0e_0_usa;
+CREATE TABLE IF NOT EXISTS states ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
+
+guillaume@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
+Enter password: 
+guillaume@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+(2, 'Arizona')
+guillaume@ubuntu:~/0x0F$ 
+```
