@@ -153,3 +153,5 @@ guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
 Dallas, Houston, Austin
 guillaume@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_
 ```
+### **[6. First state model](model_state.py)**
+![Image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f84fe6edb9436c8560996c6d72e17ea51dab28e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230401T160029Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ec7b17e561316200125339ba0d5432f488f8b78f08e0e7ecb52e4c19f34edb19)
