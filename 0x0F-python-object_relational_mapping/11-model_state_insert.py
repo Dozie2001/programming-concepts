@@ -10,9 +10,9 @@ if __name__ == "__main__":
     engine = create_engine("mysql+myslqdb://{}:{}@localhost:{}/{}"
                             .format(argv[1], argv[2], argv[3]))
     
-    Base.metadata.create_all(bind=engine)
+    Base.metadata.create_all(engine)
 
-    Session = sessionmaker()
+    Session = sessionmaker(bind=engine)
 
     session = Session()
 
