@@ -9,12 +9,11 @@ from sqlalchemy import (create_engine)
 
 
 if __name__ == "__main__":
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}"
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                            .format(argv[1], argv[2], argv[3]))
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).filter_by(id=2).first()
-
-    state.name = 'New Mexico'
+    new_instance = session.query(State).filter_by(id=2).first()
+    new_instance.name = 'New Mexico'
     session.commit()
