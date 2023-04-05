@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-A script that prints all City objects
+""" prints the State object with the name passed as argument from the database
 """
 from sys import argv
 from sqlalchemy.orm import sessionmaker
