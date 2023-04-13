@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains State class and Base, an instance of declarative_base()
+Contains the class definition of a City
 """
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
